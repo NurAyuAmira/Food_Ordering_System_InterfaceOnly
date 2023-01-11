@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> View Product </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+    
+    <body>
+<div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxs-copyright'></i>
+            <span class="logo_name">Bakery House</span>
+        </div>
+        <ul class="nav-links">
+             <li>
+                <a href="index.html">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+            </li>
+            
+             <li>
+                <a href="viewcustomer.html">
+                    <i class='bx bx-user' ></i>
+                    <span class="link_name">View Customer</span>
+                </a>
+            </li>
+             <li>
+                <a href="addcategory.html">
+                    <i class='bx bx-box'></i>
+                    <span class="link_name"> Add New Category</span>
+                </a>
+            </li>
+             <li>
+                <a href="viewcategory.html">
+                    <i class='bx bx-box'></i>
+                    <span class="link_name">View Category</span>
+                </a>
+            </li>
+             <li>
+                <a href="addproduct.html">
+                    <i class='bx bx-list-ul' ></i>
+                    <span class="link_name"> Add Product List</span>
+                </a>
+            </li>
+             <li>
+                <a href="viewproduct.html">
+                    <i class='bx bx-list-ul' ></i>
+                    <span class="link_name">View Product List</span>
+                </a>
+            </li>
+             <li>
+                <a href="vieworder.html">
+                    <i class='bx bx-task'></i>
+                    <span class="link_name">View Order</span>
+                </a>
+            </li>
+            <li>
+                <a href="login_admin.html">
+                    <i class='bx bx-log-out' ></i>
+                    <span class="link_name">Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+        
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+   
+      <div class="profile-details">
+        <img src="images/daniel.JPG" alt="">
+        <span class="admin_name"> Daniel Imtiyaz</span>
+        <i class='bx bx-chevron-down' ></i>
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+      </div>
+        
+    <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Product List</div>
+          <div class="sales-details">
+            <ul class="details">
+              <li class="topic">ID</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
+            <ul class="details">
+              <li class="topic">Product</li>
+                <li>Aceley Lace</li>
+                <li>Karsea Strap</li>
+                <li>Craft Run Lace</li>
+                <li>Desert Boot</li>
+                <li>Sunder Cross</li>
+                <li>SprintLite Lace</li>
+                <li>Flex Sand</li>
+                <li>Canebay Plain</li>
+                <li>TriStreet Walk</li>
+            </ul>
+            <ul class="details">
+            <li class="topic">Price</li>
+            <li>RM 399</li>
+            <li>RM 369</li>
+            <li>RM 599</li>
+            <li>RM 329</li>
+            <li>RM 499</li>
+            <li>RM 599</li>
+            <li>RM 439</li>
+            <li>RM 429</li>
+             <li>RM 599</li>
+          </ul>
+
+          <ul class="details">
+            <li class="topic" style=" font-size:25px; font-weight:800; color:#2BD47D;">EDIT</li>
+            <li><a href="editprod.html"><i class='bx bxs-edit-alt'></i></a></li>
+            <li><a href="editprod.html"><i class='bx bxs-edit-alt'></i></a></li>
+            <li><a href="editprod.html"><i class='bx bxs-edit-alt'></i></a></li>
+            <li><a href="editprod.html"><i class='bx bxs-edit-alt'></i></a></li>
+            <li><a href="editprod.html"><i class='bx bxs-edit-alt'></i></a></li>
+            <li><a href="editprod.html"><i class='bx bxs-edit-alt'></i></a></li>
+            <li><a href="editprod.html"><i class='bx bxs-edit-alt'></i></a></li>
+             <li><a href="editprod.html"><i class='bx bxs-edit-alt'></i></a></li>
+             <li><a href="editprod.html"><i class='bx bxs-edit-alt'></i></a></li>
+          </ul>
+          </div>
+          <div class="button">
+            <a href="#">See All</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
